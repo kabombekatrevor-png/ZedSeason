@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ZedSeason Admin</title>
+<link rel="stylesheet" href="admin.css">
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+</head>
+
+<body>
+
+<h2>Admin Login</h2>
+<input id="email" placeholder="Email">
+<input id="password" type="password" placeholder="Password">
+<button onclick="login()">Login</button>
+
+<hr>
+
+<h2>Upload Music</h2>
+<input id="title" placeholder="Song Title">
+<input id="artist" placeholder="Artist Name">
+<input id="genre" placeholder="Genre">
+<input type="file" id="musicFile">
+<input type="file" id="coverFile">
+<button onclick="uploadMusic()">Upload</button>
+
+<script src="admin.js"></script>
+</body>
+</html>
